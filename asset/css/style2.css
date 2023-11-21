@@ -1,0 +1,380 @@
+/*подключение шрифта*/
+@font-face {
+	font-family: 'Kelly Slab';
+	src: url('../fonts/KellySlab-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*общие стили*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Kelly Slab';
+}
+
+h1,h2,h3,h4,p {
+	padding: 15px 0;
+	margin-bottom: 0px;
+	color: rgb(255, 255, 255);
+	font-family: 'Kelly Slab';
+}
+
+a {
+	color: rgb(255, 255, 255);
+	cursor:pointer;
+	text-decoration: none;
+	font-family: 'Kelly Slab';
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	object-fit: cover;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-justify {
+	text-align: justify !important;
+}
+
+.text-small {
+	font-size: 12pt;
+	color: gray;
+}
+/*валидация*/
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
+
+body{
+	max-width: 1440px; 
+	margin: 0 auto;
+	background: #211F1F;
+	padding: 0 50px;
+  }
+  /*кнопки*/
+ 
+  button{
+    background-color: #fff;
+    color: #000000;
+    font-size: 20px;
+    padding: 1% 8%;
+  }
+
+div.head, .reg {
+	padding: 20px 0;
+	font-size: 20pt;
+	color: #fff;
+}
+
+div.wrap {
+	padding: 20px;
+	margin: 0 auto;
+}
+
+div.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+div.row.at {
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+div.col {
+    width: 30%;
+    padding: 20px;
+    transition: .2s;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+div.col img {
+	width: 100%;
+	height: 500px;
+    margin-bottom: 10px;
+}
+/*шапка*/
+header {
+	background-color:#211F1F;
+	
+}
+
+header div.top a:hover {
+	text-decoration: none;
+}
+
+header ul, footer ul  {
+	list-style: none;
+	display: flex;
+	justify-content:space-around;
+}
+
+header ul li, footer ul li {
+	width: 30%;
+	padding: 20px 0;
+	transition: .2s;
+	text-align: center;
+}
+
+header button, footer button {
+	max-width: 60%;
+	margin: 0;
+}
+.logo img{
+	width: 200px;
+}
+.row span{
+	font-size: 20px;
+}
+/*фильтр*/
+  select{
+	border: none;
+	position: relative;
+	outline: none;
+	padding: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-start;
+
+	}
+	select::after{
+	  content: "";
+	  display: block;
+	  width: 25px;
+	  height: 25px;
+	  background-image: url("/images/icons8-стрелка.png");
+	  position: absolute;
+	  right: 5px;
+	  top: 5px;
+	}
+
+		
+
+ div.product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+input{
+	border:solid 1px #000000;
+	width: 60%;
+	height: 50px;
+	margin-bottom: 10px;
+  }
+  input::placeholder{
+	color: #000000;
+	padding-left: 25px;
+  }
+  form{
+	width: 75%;
+  }
+.forms, form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+form div.part {
+	display: flex;
+	align-items: center;
+}
+form button{
+	margin-top: 30px;
+}
+form div.part > *:nth-child(1) {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+ .checkbox-round {
+	width: 1.3em;
+	height: 1.3em;
+	background-color: white;
+	border-radius: 50%;
+	vertical-align:text-bottom;
+	border: 1px solid #000000;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+  }
+
+ .input label{
+  margin-left: 30px;
+  margin-top: 30px;
+ }
+ div.product {
+	margin-top: 50px;
+ }
+ div.product div.image {
+	text-align: center;
+}
+
+ div.product img {
+	height: 300px;
+}
+div.product .text{
+	width: 70%;
+}
+div.product .text .image{
+	margin-top: 150px;
+	margin-left: -70px;
+}
+footer {
+	margin-top: 40px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer p{
+	padding-top: 20px;
+}
+hr{
+width: 95%;
+}
+section{
+display: flex;
+justify-content: space-between;
+margin-top: 60px;
+}
+.poster-img1{
+	background-image: url(../img/Group73.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 48%;
+}
+.poster-img2{
+	background-image: url(../img/Group74.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 48%;
+}
+.poster-img2_text{
+	width: 90%;
+	padding: 100px 15px;
+	text-align: center;
+	margin-left: 20px;
+}
+.poster-img2_text p{
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+.icon{
+	align-items: center;
+}
+.icon__item p{
+text-align: center;
+}
+/*SLIDER*/
+div#slider {
+	position: relative;
+	padding: 20px;
+	overflow: hidden; 
+	margin-top: 60px;
+}
+
+div#slider div.slides {
+	position: relative;
+	display: flex;
+	transition: .4s;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 0;
+}
+
+div#slider div.slides div.slide {
+	flex-shrink: 0;
+	text-align:center;
+	margin-right: 50px;
+	margin-bottom: 0;
+}
+
+div.slide img {
+	margin-bottom: 10px;
+}
+
+/*FILTRATION*/
+span {
+	cursor: pointer;
+}
+
+span:hover {
+	text-decoration: underline;
+}
+
+select#category {
+	max-width: 30%;
+}
+.row.catalogs{
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 0;
+}
+form.search{
+	width: 50%;
+}
+.row.catalogs form.search input{
+	width: 100%;
+	margin: 0;
+}
+section.search{
+	justify-content: space-between;
+}
+.search__text{
+	width: 75%;
+}
+#products2{
+	flex-direction: column;
+}
+#products2 .row{
+	border: 1px solid #fff;
+	padding: 20px 60px;
+}
+#products2 .col{
+width: 100%;
+}
+.row.cart2{
+	align-items: left;
+	justify-content:left;
+}
+.cart2f{
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+.part{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-start;
+}
